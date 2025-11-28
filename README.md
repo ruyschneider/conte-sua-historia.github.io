@@ -35,23 +35,41 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
 
-    .tag {
-      display: inline-block;
-      padding: 4px 10px;
+    .top-banner {
+      background: linear-gradient(90deg, var(--verde), var(--laranja));
       border-radius: 999px;
-      background: rgba(46,125,50,0.08);
-      color: var(--verde);
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: .04em;
+      padding: 10px 16px;
+      color: #ffffff;
+      margin-bottom: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .top-banner-line1 {
+      font-size: 11px;
+      letter-spacing: .18em;
       text-transform: uppercase;
-      margin-bottom: 8px;
+      opacity: 0.9;
+      font-weight: 600;
+    }
+
+    .top-banner-line2 {
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .top-banner-line2 span.emoji {
+      font-size: 20px;
     }
 
     h1 {
-      margin: 4px 0 8px;
-      font-size: 26px;
-      line-height: 1.2;
+      margin: 0 0 8px;
+      font-size: 22px;
+      line-height: 1.3;
       color: var(--cinza-escuro);
     }
 
@@ -193,27 +211,34 @@
       padding: 4px 8px;
       border-radius: 6px;
     }
-
   </style>
 </head>
 <body>
   <main class="container">
-    <div class="tag">Concurso de Histórias</div>
-    <h1>A Hora da Abobrinha – Conte a sua história! 🥒</h1>
+    <div class="top-banner">
+      <div class="top-banner-line1">CONCURSO DE HISTÓRIAS</div>
+      <div class="top-banner-line2">
+        <span>A HORA DA ABOBRINHA</span>
+        <span class="emoji">🎙️🥒</span>
+      </div>
+    </div>
+
+    <h1>Conte sua história e participe de um episódio especial!</h1>
+
     <p>
       Participe do concurso de histórias do podcast <strong>A HORA DA ABOBRINHA</strong> e transforme
-      sua ideia em um episódio especial. Libido cultural, criatividade liberada e zero polêmica. 😄
+      sua ideia em um episódio especial. Criatividade liberada e bom humor em primeiro lugar. 😄
     </p>
 
     <div class="buttons-grid">
       <a class="btn btn-primary"
          href="https://wa.me/5511999110843?text=Ol%C3%A1%21+Quero+participar+do+concurso+de+hist%C3%B3rias+A+Hora+da+Abobrinha%21">
-        Enviar pelo WhatsApp
+        Enviar história pelo WhatsApp
       </a>
 
       <a class="btn btn-secondary"
          href="mailto:ruyaschnaider@gmail.com?subject=Concurso%20A%20Hora%20da%20Abobrinha&body=Ol%C3%A1%21%20Quero%20participar%20do%20concurso%20de%20hist%C3%B3rias%20A%20Hora%20da%20Abobrinha.%20Segue%20minha%20hist%C3%B3ria%20em%20anexo%20ou%20no%20corpo%20do%20e-mail.">
-        Enviar por E-mail
+        Enviar história por E-mail
       </a>
 
       <a class="btn btn-ghost"
